@@ -19,7 +19,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 shrink-0">
             {/* <div className="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center"> */}
-                <img src="./src/public/assets/lap.jpeg" alt="Logo" className="w-8 h-8" />
+                <img src="./public/assets/lap.jpeg" alt="Logo" className="w-8 h-8" />
               {/* <Monitor size={16} className="text-white" /> */}
             {/* </div> */}
             <span className="font-display font-bold text-lg tracking-tight">LaptopStore</span>
@@ -41,13 +41,13 @@ export default function Navbar() {
           <div className="flex-1" />
 
           {/* Admin link */}
-          <Link
+          {/* <Link
             to="/admin"
             className="hidden sm:flex items-center gap-1.5 text-sm font-medium text-surface-800 hover:text-brand-500 transition-colors"
           >
             <ShieldCheck size={16} />
             Admin
-          </Link>
+          </Link> */}
 
           {/* Mobile menu toggle */}
           <button
@@ -72,9 +72,9 @@ export default function Navbar() {
                 />
               </div>
             </form>
-            <Link to="/admin" className="flex items-center gap-2 text-sm font-medium text-surface-800 hover:text-brand-500">
+            {/* <Link to="/admin" className="flex items-center gap-2 text-sm font-medium text-surface-800 hover:text-brand-500">
               <ShieldCheck size={16} /> Admin Panel
-            </Link>
+            </Link> */}
           </div>
         )}
       </div>
