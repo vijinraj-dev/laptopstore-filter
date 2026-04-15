@@ -19,7 +19,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 shrink-0">
             {/* <div className="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center"> */}
-                <img src="./public/lap.jpeg" alt="Logo" className="w-8 h-8" />
+                <img src="https://laptopstore-filter-oqqq.vercel.app/lap.jpeg" alt="Logo" className="w-8 h-8" />
               {/* <Monitor size={16} className="text-white" /> */}
             {/* </div> */}
             <span className="font-display font-bold text-lg tracking-tight">LaptopStore</span>
