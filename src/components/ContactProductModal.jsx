@@ -21,6 +21,7 @@ const contactSchema = z.object({
   email: z
     .string()
     .trim()
+    .min(1, 'Email is required')
     .refine((v) => v === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v), {
       message: 'Invalid email address',
     }),
@@ -216,7 +217,7 @@ export default function ContactProductModal({ open, onClose, product }) {
                 <label htmlFor="contact-email" className="mb-1.5 block text-sm font-medium text-surface-800">
                   <span className="inline-flex items-center gap-1.5">
                     <Mail size={14} className="text-surface-200" />
-                    Email <span className="font-normal text-surface-200">(optional)</span>
+                    Email <span className="text-red-500">*</span>
                   </span>
                 </label>
                 <input
